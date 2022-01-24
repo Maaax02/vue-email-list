@@ -7,11 +7,17 @@
     <title>Document</title>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/0.20.0/axios.min.js"></script>
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <link rel="stylesheet" href="css/style.css">
 </head>
 <body>
 
     <div id="app">
-        <span v-for="mail in email">{{mail}}</span>
+        <div class="title">
+            <h1>Email generator</h1>
+        </div>
+        <ul>
+            <li v-for="mail in email">{{mail}}</li>
+        </ul>
     </div>
     
     <script src="script.js"></script>
